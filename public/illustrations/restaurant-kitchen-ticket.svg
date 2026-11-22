@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 240" width="100%" height="100%" fill="none">
+    <defs>
+        <filter id="kdsShadow" x="-10%" y="-10%" width="125%" height="125%">
+            <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="rgba(217, 119, 6, 0.12)"/>
+        </filter>
+    </defs>
+    <rect x="10" y="10" width="260" height="220" rx="16" fill="#18181B" stroke="#27272A" stroke-width="1.5" filter="url(#kdsShadow)"/>
+    
+    <!-- Header Bar -->
+    <rect x="10" y="10" width="260" height="38" rx="16" fill="#D97706"/>
+    <text x="24" y="34" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="13" fill="#FFFFFF">TABLE 07 • GUESTS: 4</text>
+    <text x="256" y="34" text-anchor="end" font-family="'JetBrains Mono', monospace" font-weight="700" font-size="12" fill="#FFFFFF">TICKET #42</text>
+    
+    <!-- Order Timestamp & Timer -->
+    <text x="24" y="70" font-family="'JetBrains Mono', monospace" font-size="10" fill="#A1A1AA">SERVER: MATEO C. • IN: 19:42 (12 MINS AGO)</text>
+    
+    <!-- Items -->
+    <g font-family="'JetBrains Mono', monospace" font-size="12" fill="#FFFFFF">
+        <text x="24" y="102" font-weight="700">2x GRILLED OCTOPUS</text>
+        <text x="36" y="118" font-size="10" fill="#FBBF24">↳ EXTRA CHORIZO OIL, NO CORIANDER</text>
+        
+        <text x="24" y="142" font-weight="700">1x PRIME WAGYU RIBEYE (12oz)</text>
+        <text x="36" y="158" font-size="10" fill="#FBBF24">↳ MEDIUM RARE • CHIMICHURRI ON SIDE</text>
+        
+        <text x="24" y="182" font-weight="700">1x HANDMADE TAGLIATELLE</text>
+        <text x="36" y="198" font-size="10" fill="#A1A1AA">↳ SHAVED BLACK TRUFFLE (TABLESIDE)</text>
+    </g>
+</svg>

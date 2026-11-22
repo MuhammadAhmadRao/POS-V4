@@ -1,0 +1,86 @@
+/* MANAGEO BRAND IDENTITY CSS DESIGN TOKENS */
+:root {
+  /* Brand Core - Electric Cobalt */
+  --brand-50: #EFF6FF;
+  --brand-100: #DBEAFE;
+  --brand-200: #BFDBFE;
+  --brand-300: #93C5FD;
+  --brand-400: #60A5FA;
+  --brand-500: #3B82F6;
+  --brand-600: #2563EB;
+  --brand-700: #1D4ED8;
+  --brand-800: #1E40AF;
+  --brand-900: #1E3A8A;
+
+  /* Daylight Canvas (Storefront Clarity) */
+  --daylight-base: #F8F9FA;
+  --daylight-surface: #FFFFFF;
+  --daylight-subtle: #F2F4F7;
+  --daylight-border: rgba(10, 13, 20, 0.08);
+  --daylight-text-primary: #0A0D14;
+  --daylight-text-secondary: #525866;
+  --daylight-text-muted: #868C98;
+
+  /* Obsidian Canvas (Engine Power & Hardware) */
+  --obsidian-950: #090A0F;
+  --obsidian-900: #12141A;
+  --obsidian-850: #161922;
+  --obsidian-800: #1A1D26;
+  --obsidian-700: #272B38;
+  --obsidian-border: rgba(255, 255, 255, 0.08);
+  --obsidian-text-primary: #FFFFFF;
+  --obsidian-text-secondary: #94A3B8;
+  --obsidian-text-muted: #64748B;
+
+  /* Industry Semantic Accents */
+  --vertical-retail: #059669;
+  --vertical-salon: #E11D48;
+  --vertical-restaurant: #D97706;
+
+  /* Typographic Constants */
+  --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --letter-spacing-kicker: 0.2em;
+}
+
+/* Micro-Kicker Badge Standard */
+.kicker-label {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.kicker-square {
+  width: 6px;
+  height: 6px;
+  display: inline-block;
+  background-color: currentColor;
+}
+
+/* Laser Scanner Keyframe Animation */
+@keyframes barcodeLaser {
+  0% { transform: translateY(0%); opacity: 0; }
+  15% { opacity: 1; }
+  85% { opacity: 1; }
+  100% { transform: translateY(100%); opacity: 0; }
+}
+
+.animate-laser {
+  animation: barcodeLaser 1.8s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+/* Pulse Ring Animation */
+@keyframes ringPulse {
+  0% { transform: scale(0.95); opacity: 0.8; }
+  50% { transform: scale(1.05); opacity: 0.3; }
+  100% { transform: scale(0.95); opacity: 0.8; }
+}
+
+.animate-pulse-subtle {
+  animation: ringPulse 3s ease-in-out infinite;
+}

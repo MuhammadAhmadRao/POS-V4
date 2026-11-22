@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 480" width="100%" height="100%" fill="none">
+    <defs>
+        <filter id="receiptShadow" x="-10%" y="-5%" width="125%" height="115%">
+            <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="rgba(0,0,0,0.12)"/>
+        </filter>
+        <linearGradient id="paperGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#FFFFFF"/>
+            <stop offset="100%" stop-color="#F9FAFB"/>
+        </linearGradient>
+    </defs>
+    
+    <!-- Receipt Body with Perforated Edges -->
+    <path d="M 0 0 L 5 4 L 10 0 L 15 4 L 20 0 L 25 4 L 30 0 L 35 4 L 40 0 L 45 4 L 50 0 L 55 4 L 60 0 L 65 4 L 70 0 L 75 4 L 80 0 L 85 4 L 90 0 L 95 4 L 100 0 L 105 4 L 110 0 L 115 4 L 120 0 L 125 4 L 130 0 L 135 4 L 140 0 L 145 4 L 150 0 L 155 4 L 160 0 L 165 4 L 170 0 L 175 4 L 180 0 L 185 4 L 190 0 L 195 4 L 200 0 L 205 4 L 210 0 L 215 4 L 220 0 L 225 4 L 230 0 L 235 4 L 240 0 L 245 4 L 250 0 L 255 4 L 260 0 L 265 4 L 270 0 L 275 4 L 280 0 L 280 480 L 275 476 L 270 480 L 265 476 L 260 480 L 255 476 L 250 480 L 245 476 L 240 480 L 235 476 L 230 480 L 225 476 L 220 480 L 215 476 L 210 480 L 205 476 L 200 480 L 195 476 L 190 480 L 185 476 L 180 480 L 175 476 L 170 480 L 165 476 L 160 480 L 155 476 L 150 480 L 145 476 L 140 480 L 135 476 L 130 480 L 125 476 L 120 480 L 115 476 L 110 480 L 105 476 L 100 480 L 95 476 L 90 480 L 85 476 L 80 480 L 75 476 L 70 480 L 65 476 L 60 480 L 55 476 L 50 480 L 45 476 L 40 480 L 35 476 L 30 480 L 25 476 L 20 480 L 15 476 L 10 480 L 5 476 L 0 480 Z" 
+          fill="url(#paperGrad)" stroke="rgba(0,0,0,0.08)" stroke-width="1" filter="url(#receiptShadow)"/>
+    
+    <!-- Header: ManageO Flagship Store -->
+    <text x="140" y="44" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="14" letter-spacing="2" fill="#0A0D14">MANAGEO STORE #04</text>
+    <text x="140" y="60" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="9" fill="#64748B">SOHO DISTRICT • NEW YORK, NY</text>
+    <text x="140" y="74" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="9" fill="#94A3B8">REGISTER 02 • CASHIER: ELENA V.</text>
+    <text x="140" y="88" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="9" fill="#94A3B8">DATE: 2026-11-22 14:32:08</text>
+    
+    <!-- Perforated Tear Line -->
+    <line x1="20" y1="104" x2="260" y2="104" stroke="#CBD5E1" stroke-dasharray="4 4" stroke-width="1"/>
+    
+    <!-- Itemized Entries -->
+    <g font-family="'JetBrains Mono', monospace" font-size="11" fill="#0A0D14">
+        <!-- Item 1: Retail Fashion -->
+        <text x="20" y="130" font-weight="600">MERINO WOOL OVERSHIRT</text>
+        <text x="260" y="130" text-anchor="end" font-weight="700">$185.00</text>
+        <text x="20" y="145" font-size="9" fill="#64748B">SKU: MW-BLK-M • QTY: 1</text>
+        
+        <!-- Item 2: Salon Care -->
+        <text x="20" y="175" font-weight="600">BOTANICAL SCALP ESSENCE</text>
+        <text x="260" y="175" text-anchor="end" font-weight="700">$48.00</text>
+        <text x="20" y="190" font-size="9" fill="#64748B">SKU: BE-100ML • QTY: 1</text>
+        
+        <!-- Item 3: Cafe / Hospitality -->
+        <text x="20" y="220" font-weight="600">ETHIOPIA GUJI (POUROVER)</text>
+        <text x="260" y="220" text-anchor="end" font-weight="700">$6.50</text>
+        <text x="20" y="235" font-size="9" fill="#64748B">SINGLE ORIGIN • SEAT 04</text>
+    </g>
+    
+    <!-- Subtotal & Tax Divider -->
+    <line x1="20" y1="258" x2="260" y2="258" stroke="#E2E8F0" stroke-width="1.5"/>
+    
+    <g font-family="'JetBrains Mono', monospace" font-size="11" fill="#64748B">
+        <text x="20" y="280">SUBTOTAL</text>
+        <text x="260" y="280" text-anchor="end" font-weight="600" fill="#0A0D14">$239.50</text>
+        
+        <text x="20" y="300">NYC SALES TAX (8.875%)</text>
+        <text x="260" y="300" text-anchor="end">$21.26</text>
+        
+        <text x="20" y="320">STAFF TIP (20%)</text>
+        <text x="260" y="320" text-anchor="end">$48.00</text>
+    </g>
+    
+    <!-- Bold Total Banner -->
+    <rect x="18" y="336" width="244" height="42" rx="6" fill="#F1F5F9"/>
+    <text x="32" y="362" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="14" fill="#0A0D14">TOTAL DUE</text>
+    <text x="248" y="362" text-anchor="end" font-family="'JetBrains Mono', monospace" font-weight="800" font-size="16" fill="#2563EB">$308.76</text>
+    
+    <!-- Payment Method -->
+    <text x="140" y="398" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600" fill="#059669">● APPROVED — CONTACTLESS APPLE PAY (••8914)</text>
+    
+    <!-- Barcode Footer -->
+    <g transform="translate(40, 412)">
+        <rect x="0" y="0" width="3" height="32" fill="#0A0D14"/>
+        <rect x="5" y="0" width="2" height="32" fill="#0A0D14"/>
+        <rect x="10" y="0" width="4" height="32" fill="#0A0D14"/>
+        <rect x="16" y="0" width="2" height="32" fill="#0A0D14"/>
+        <rect x="22" y="0" width="5" height="32" fill="#0A0D14"/>
+        <rect x="30" y="0" width="2" height="32" fill="#0A0D14"/>
+        <rect x="35" y="0" width="3" height="32" fill="#0A0D14"/>
+        <rect x="42" y="0" width="6" height="32" fill="#0A0D14"/>
+        <rect x="52" y="0" width="2" height="32" fill="#0A0D14"/>
+        <rect x="58" y="0" width="4" height="32" fill="#0A0D14"/>
+        <rect x="66" y="0" width="3" height="32" fill="#0A0D14"/>
+        <rect x="73" y="0" width="5" height="32" fill="#0A0D14"/>
+        <rect x="82" y="0" width="2" height="32" fill="#0A0D14"/>
+        <rect x="88" y="0" width="4" height="32" fill="#0A0D14"/>
+        <rect x="96" y="0" width="6" height="32" fill="#0A0D14"/>
+        <rect x="106" y="0" width="2" height="32" fill="#0A0D14"/>
+        <rect x="112" y="0" width="5" height="32" fill="#0A0D14"/>
+        <rect x="121" y="0" width="3" height="32" fill="#0A0D14"/>
+        <rect x="128" y="0" width="4" height="32" fill="#0A0D14"/>
+        <rect x="136" y="0" width="2" height="32" fill="#0A0D14"/>
+        <rect x="142" y="0" width="6" height="32" fill="#0A0D14"/>
+        <rect x="152" y="0" width="3" height="32" fill="#0A0D14"/>
+        <rect x="158" y="0" width="5" height="32" fill="#0A0D14"/>
+        <rect x="168" y="0" width="2" height="32" fill="#0A0D14"/>
+        <rect x="174" y="0" width="4" height="32" fill="#0A0D14"/>
+        <rect x="182" y="0" width="6" height="32" fill="#0A0D14"/>
+        <rect x="194" y="0" width="3" height="32" fill="#0A0D14"/>
+    </g>
+    <text x="140" y="456" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="9" letter-spacing="3" fill="#64748B">8 901234 567890</text>
+</svg>

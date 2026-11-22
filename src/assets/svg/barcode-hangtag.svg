@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 320" width="100%" height="100%" fill="none">
+    <defs>
+        <filter id="tagShadow" x="-15%" y="-10%" width="130%" height="125%">
+            <feDropShadow dx="4" dy="12" stdDeviation="16" flood-color="rgba(0,0,0,0.15)"/>
+        </filter>
+    </defs>
+    <!-- Tag Card with Eyelet Hole -->
+    <rect x="10" y="10" width="180" height="300" rx="16" fill="#0A0D14" stroke="#27272A" stroke-width="1.5" filter="url(#tagShadow)"/>
+    <!-- Punched Metallic Eyelet -->
+    <circle cx="100" cy="36" r="8" fill="#18181B" stroke="#71717A" stroke-width="2"/>
+    <circle cx="100" cy="36" r="4" fill="#090A0F"/>
+    
+    <!-- ManageO Brand Micro-Wordmark -->
+    <text x="100" y="72" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="11" letter-spacing="3" fill="#A1A1AA">MANAGEO RETAIL</text>
+    
+    <!-- Garment Title -->
+    <text x="100" y="110" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="14" fill="#FFFFFF">KIMONO JACKET</text>
+    <text x="100" y="128" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="10" fill="#71717A">JAPANESE RAW SELVEDGE</text>
+    
+    <!-- Specs Grid -->
+    <g font-family="'JetBrains Mono', monospace" font-size="10" fill="#E4E4E7">
+        <rect x="30" y="146" width="65" height="32" rx="6" fill="#18181B"/>
+        <text x="62" y="160" text-anchor="middle" font-size="8" fill="#71717A">SIZE</text>
+        <text x="62" y="173" text-anchor="middle" font-weight="700">MEDIUM (M)</text>
+        
+        <rect x="105" y="146" width="65" height="32" rx="6" fill="#18181B"/>
+        <text x="137" y="160" text-anchor="middle" font-size="8" fill="#71717A">COLOR</text>
+        <text x="137" y="173" text-anchor="middle" font-weight="700">OBSIDIAN</text>
+    </g>
+    
+    <!-- Price Badge -->
+    <text x="100" y="215" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="22" fill="#2563EB">$240.00</text>
+    
+    <!-- Scannable Barcode Lines -->
+    <g transform="translate(30, 235)">
+        <rect x="0" y="0" width="3" height="36" fill="#FFFFFF"/>
+        <rect x="5" y="0" width="1" height="36" fill="#FFFFFF"/>
+        <rect x="8" y="0" width="4" height="36" fill="#FFFFFF"/>
+        <rect x="15" y="0" width="2" height="36" fill="#FFFFFF"/>
+        <rect x="20" y="0" width="5" height="36" fill="#FFFFFF"/>
+        <rect x="28" y="0" width="2" height="36" fill="#FFFFFF"/>
+        <rect x="34" y="0" width="3" height="36" fill="#FFFFFF"/>
+        <rect x="42" y="0" width="5" height="36" fill="#FFFFFF"/>
+        <rect x="50" y="0" width="2" height="36" fill="#FFFFFF"/>
+        <rect x="56" y="0" width="4" height="36" fill="#FFFFFF"/>
+        <rect x="64" y="0" width="2" height="36" fill="#FFFFFF"/>
+        <rect x="70" y="0" width="6" height="36" fill="#FFFFFF"/>
+        <rect x="80" y="0" width="2" height="36" fill="#FFFFFF"/>
+        <rect x="86" y="0" width="4" height="36" fill="#FFFFFF"/>
+        <rect x="94" y="0" width="3" height="36" fill="#FFFFFF"/>
+        <rect x="102" y="0" width="5" height="36" fill="#FFFFFF"/>
+        <rect x="112" y="0" width="2" height="36" fill="#FFFFFF"/>
+        <rect x="118" y="0" width="4" height="36" fill="#FFFFFF"/>
+        <rect x="126" y="0" width="5" height="36" fill="#FFFFFF"/>
+        <rect x="135" y="0" width="2" height="36" fill="#FFFFFF"/>
+    </g>
+    <text x="100" y="285" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="8" letter-spacing="2" fill="#71717A">SKU-7729-001</text>
+</svg>
