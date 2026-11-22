@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { KickerBadge } from '../ui/Badge';
 import { ManageOLogo } from '../brand/ManageOLogo';
-import { Store, ShoppingBag, Users, Shield, DollarSign, BarChart3, ArrowRight } from 'lucide-react';
+import { Store, ShoppingBag, Shield, DollarSign, BarChart3, ArrowRight, Building } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 interface EcosystemNode {
@@ -16,12 +16,12 @@ interface EcosystemNode {
 }
 
 const NODES: EcosystemNode[] = [
-  { id: 'pos', title: 'Front-of-House POS', category: 'SALES ENGINE', icon: <ShoppingBag className="w-5 h-5 text-blue-600" />, metric: '$18.4K Today', status: 'Online • 3 Terminals', x: '10%', y: '15%' },
-  { id: 'inventory', title: 'Unified Inventory', category: 'MULTI-WAREHOUSE', icon: <Store className="w-5 h-5 text-emerald-600" />, metric: '3,412 Active SKUs', status: 'Auto-Sync Active', x: '75%', y: '15%' },
-  { id: 'staff', title: 'Workforce & Shifts', category: 'STAFF ACCESS', icon: <Users className="w-5 h-5 text-rose-600" />, metric: '14 Team Members', status: '8 Clocked In', x: '5%', y: '65%' },
-  { id: 'finance', title: 'Finance & Ledgers', category: 'CASH RECONCILIATION', icon: <DollarSign className="w-5 h-5 text-amber-600" />, metric: '$3,420 Cash Float', status: 'Balanced To-The-Penny', x: '75%', y: '65%' },
-  { id: 'security', title: 'Permissions & Roles', category: 'ACCESS MATRIX', icon: <Shield className="w-5 h-5 text-purple-600" />, metric: '256-Bit Encrypted', status: 'Manager Overrides On', x: '25%', y: '85%' },
-  { id: 'reports', title: 'Real-Time Intelligence', category: 'ANALYTICS PULSE', icon: <BarChart3 className="w-5 h-5 text-blue-600" />, metric: '68.4% Margin', status: 'Hourly Velocity Peak', x: '60%', y: '85%' },
+  { id: 'pos', title: 'Front Counter POS', category: 'SALES & REGISTERS', icon: <ShoppingBag className="w-5 h-5 text-blue-600" />, metric: 'Rs. 3.60M Sales Today', status: 'Online • 3 Terminals', x: '10%', y: '15%' },
+  { id: 'inventory', title: 'Unified Inventory', category: 'STOCK AUDIT & ADJUSTMENT', icon: <Store className="w-5 h-5 text-emerald-600" />, metric: '96 Products • Rs. 11.68M Stock', status: 'Cycle Count Synced', x: '75%', y: '15%' },
+  { id: 'purchases', title: 'Purchases & Vendors', category: 'SUPPLIER INVOICES', icon: <DollarSign className="w-5 h-5 text-amber-600" />, metric: 'Rs. 4.6K Purchases', status: 'Ledger Reconciled', x: '5%', y: '65%' },
+  { id: 'branches', title: 'Multi-Branch Engine', category: 'BUSINESS MANAGEMENT', icon: <Building className="w-5 h-5 text-blue-600" />, metric: 'LINSOL Multi-Branch', status: 'Main & Mall Connected', x: '75%', y: '65%' },
+  { id: 'security', title: 'Permissions & Roles', category: 'ACCESS MATRIX & AUDIT LOG', icon: <Shield className="w-5 h-5 text-purple-600" />, metric: 'Owner & Cashier Roles', status: 'Manager Overrides On', x: '25%', y: '85%' },
+  { id: 'reports', title: 'Profit & Loss Intelligence', category: 'FINANCIAL ANALYTICS', icon: <BarChart3 className="w-5 h-5 text-emerald-600" />, metric: '17.74% Gross Margin', status: 'Net Profit Rs. 446.98K', x: '60%', y: '85%' },
 ];
 
 export const UnifiedEngine: React.FC = () => {

@@ -56,7 +56,7 @@ export const ObsidianSection: React.FC = () => {
             </div>
           </div>
 
-          {/* Card 2: The Terminal Pulse Hub */}
+          {/* Card 2: High-Velocity Event Engine */}
           <div className="p-8 rounded-4xl bg-[#12141A] border-2 border-blue-500/40 shadow-[0_0_40px_rgba(37,99,235,0.2)] space-y-4 relative group">
             <div className="flex items-center justify-between">
               <div className="w-12 h-12 rounded-2xl bg-blue-600/20 border border-blue-500/40 flex items-center justify-center">
@@ -64,12 +64,12 @@ export const ObsidianSection: React.FC = () => {
               </div>
               <ManageOLogo variant="symbol" size={32} />
             </div>
-            <h3 className="text-xl font-bold text-white">The Terminal Pulse</h3>
+            <h3 className="text-xl font-bold text-white">High-Velocity POS Engine</h3>
             <p className="text-sm text-neutral-300 leading-relaxed">
-              Our proprietary real-time event stream syncs orders between registers, floor tablets, and back-office accounting ledgers with instant low-latency event synchronization.
+              Our real-time event stream syncs orders between front-counter registers, barcode scanners, handheld terminals, and back-office accounting ledgers with sub-50ms sync.
             </p>
             <div className="pt-2 font-mono text-xs text-blue-400 font-bold">
-              ● HIGH-VELOCITY WEBSOCKET EVENT SYNC
+              ● REAL-TIME MULTI-REGISTER WEBSOCKET SYNC
             </div>
           </div>
 

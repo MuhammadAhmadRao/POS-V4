@@ -50,13 +50,13 @@ const CONCEPTS: LogoConcept[] = [
   },
   {
     id: 'concept-4-pulse',
-    name: 'Concept 04: The Terminal Pulse (SELECTED WINNER)',
-    tagline: 'Transaction Velocity & Architectural Precision',
-    philosophy: 'A bold, architectural geometric O with a precision 45-degree diagonal notch at the upper right, housing an electric blue transaction pulse. Evokes contactless payment taps, laser barcode scans, and real-time cloud sync. Uncompromising legibility at 16px favicon scale.',
-    symbolLight: '/brand/exploration/concept-4-pulse-symbol-light.svg',
-    symbolDark: '/brand/exploration/concept-4-pulse-symbol-dark.svg',
-    wordmarkLight: '/brand/exploration/concept-4-pulse-wordmark-light.svg',
-    wordmarkDark: '/brand/exploration/concept-4-pulse-wordmark-dark.svg',
+    name: 'Official Master Identity: The Speed Cart & Gradient Ring (ManageO POS)',
+    tagline: 'Velocity, Commerce & Seamless Operations',
+    philosophy: 'A custom-designed speed cart symbol featuring three aerodynamic motion trails and an upward-curving basket, locked up with bold geometric typography and a royal-to-cyan gradient ring "O" accompanied by an official [ POS ] pill badge. Perfectly communicates lightning-fast counter checkout and cloud synchronization.',
+    symbolLight: '/brand/manageo-symbol.svg',
+    symbolDark: '/brand/manageo-symbol.svg',
+    wordmarkLight: '/brand/manageo-logo-primary.svg',
+    wordmarkDark: '/brand/manageo-logo-dark.svg',
     isWinner: true,
   },
   {
@@ -289,11 +289,11 @@ export const BrandShowcase: React.FC = () => {
                 THE OFFICIAL MANAGEO BRAND MARK
               </div>
               <h1 className="text-4xl md:text-5xl font-black tracking-tight text-neutral-900">
-                The Terminal Pulse: Design Rationale &amp; Deliverables
+                The Speed Cart &amp; Gradient Ring: Design Rationale &amp; Deliverables
               </h1>
               <p className="mt-3 text-lg text-neutral-600 max-w-3xl leading-relaxed">
-                Concept 04 was selected for its razor-sharp balance of <strong>architectural typography</strong> and 
-                a <strong>distinctive signature "O"</strong> that embodies transaction speed, cloud sync, and operational control.
+                The official ManageO identity unites a <strong>speed shopping cart mark</strong> with <strong>bold geometric typography</strong>, 
+                an electric <strong>royal-to-cyan gradient "O" ring</strong>, and a dedicated <strong>[ POS ]</strong> system badge.
               </p>
             </div>
 
@@ -304,43 +304,41 @@ export const BrandShowcase: React.FC = () => {
                   <Layers className="w-4 h-4 text-blue-400" />
                   GEOMETRIC ANATOMY &amp; GRID
                 </span>
-                <h3 className="text-2xl font-black">The Signature "O" Construction</h3>
+                <h3 className="text-2xl font-black">The Speed Cart &amp; Gradient "O" Anatomy</h3>
                 <ul className="space-y-4 text-sm text-neutral-300">
                   <li className="flex items-start gap-3">
                     <span className="w-6 h-6 rounded-full bg-blue-600/30 text-blue-400 font-mono font-bold flex items-center justify-center text-xs shrink-0 mt-0.5">1</span>
-                    <span><strong>310° Precision Outer Ring:</strong> Outer circle radius of 24px with a 6.5px stroke weight, sweeping from 25° clockwise to 85° with rounded terminal caps.</span>
+                    <span><strong>Aerodynamic Motion Trails:</strong> Three parallel horizontal speed lines on the left establish high velocity and friction-free counter transactions.</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="w-6 h-6 rounded-full bg-blue-600/30 text-blue-400 font-mono font-bold flex items-center justify-center text-xs shrink-0 mt-0.5">2</span>
-                    <span><strong>45° Dynamic Aperture Notch:</strong> Positioned at the 2 o'clock position (1:30 to 2:30), symbolizing a physical card tap slot, an optical laser scan path, or an open communication port.</span>
+                    <span><strong>Continuous Flow Cart Body:</strong> An upward-curving basket path and twin rolling wheels anchor the mark in retail, grocery, and hospitality commerce.</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="w-6 h-6 rounded-full bg-blue-600/30 text-blue-400 font-mono font-bold flex items-center justify-center text-xs shrink-0 mt-0.5">3</span>
-                    <span><strong>The Transaction Pulse Core:</strong> High-chroma Electric Cobalt circle (r=4.8px) nestled in the aperture, commanding attention and grounding the mark with tech authority.</span>
+                    <span><strong>Electric Royal-to-Cyan Gradient "O":</strong> A vector circular ring with a linear gradient spanning #0062FF to #00D5FF, symbolizing 360° cloud operations and live synchronization.</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="w-6 h-6 rounded-full bg-blue-600/30 text-blue-400 font-mono font-bold flex items-center justify-center text-xs shrink-0 mt-0.5">4</span>
-                    <span><strong>Negative Space Optical Kerning:</strong> The "O" aligns optically with the 38px Cap Height and 27px x-height of the wordmark, maintaining uniform baseline rhythm.</span>
+                    <span><strong>Dedicated [ POS ] System Pill:</strong> A periwinkle badge (#EEF4FF background, #1D4ED8 bold monospace typography) that unambiguously qualifies the software tier.</span>
                   </li>
                 </ul>
               </div>
 
               {/* Live Vector Construction Diagram */}
               <div className="p-8 rounded-3xl bg-white border border-neutral-200 flex flex-col items-center justify-center relative">
-                <div className="w-64 h-64 relative flex items-center justify-center border border-dashed border-neutral-300 rounded-2xl bg-neutral-50/50">
+                <div className="w-72 h-64 relative flex items-center justify-center border border-dashed border-neutral-300 rounded-2xl bg-neutral-50/50">
                   {/* Grid Lines */}
                   <div className="absolute inset-0 flex items-center justify-center">
                     <div className="w-full h-px bg-blue-200"></div>
                     <div className="h-full w-px bg-blue-200 absolute"></div>
                     <div className="w-48 h-48 border border-blue-200/80 rounded-full absolute"></div>
                     <div className="w-32 h-32 border border-blue-200/80 rounded-full absolute"></div>
-                    {/* 45 deg line */}
-                    <div className="w-full h-px bg-red-300 transform rotate-45 absolute opacity-60"></div>
                   </div>
-                  <ManageOLogo variant="symbol" size={140} className="relative z-10" />
+                  <ManageOLogo variant="primary" size={44} showBadge={true} className="relative z-10 scale-125" />
                 </div>
                 <span className="text-xs font-mono text-neutral-500 mt-4">
-                  MATHEMATICAL COORDINATES: 64x64 VIEWBOX • 45° ANGLE APERTURE
+                  PRECISION VECTOR LOCKUP: SPEED TRAILS + GRADIENT "O" + [ POS ] PILL
                 </span>
               </div>
             </div>

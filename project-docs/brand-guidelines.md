@@ -34,9 +34,11 @@ ManageO exists to liberate independent merchants, multi-chair salons, and busy r
 
 ## 2. Master Logo Specification
 
-The ManageO master logo consists of two integrated components:
-1. **The Custom Geometric Wordmark:** The word *"Manage"* crafted with bespoke typographic cuts, uniform vertical stems, and circular geometric lowercase bowls.
-2. **The Signature "O" (The Terminal Pulse):** A 310° heavy architectural ring with a 45° precision aperture notch housing an Electric Cobalt transaction pulse node.
+The ManageO master logo reflects the authentic brand mark from `ManageO-logo.png` and consists of four integrated components:
+1. **The Speed Cart Emblem:** Three horizontal aerodynamic motion trails on the left, an upward-sweeping cart basket curve, and twin circular rolling wheels. Symbolizes transaction velocity and retail/commerce checkout.
+2. **The Custom Geometric Wordmark:** The word *"Manage"* crafted in bold geometric sans typography (`#0F172A` in light mode, `#FFFFFF` in dark mode).
+3. **The Signature Gradient "O" Ring:** A bold circular ring rendered with a high-chroma linear gradient sweeping from Electric Royal Blue (`#0062FF`) to Sky Cyan (`#00D5FF`), symbolizing 360° cloud operations and live event synchronization.
+4. **The System [ POS ] Badge:** A periwinkle pill badge with `#EEF4FF` background and `#1D4ED8` bold monospace lettering, explicitly designating the software operating tier.
 
 ```
 +---------------------------------------------------------------------------------------------------+
@@ -44,9 +46,9 @@ The ManageO master logo consists of two integrated components:
 |                                                                                                   |
 |    |<-- X -->|                                                                |<-- X -->|         |
 |    +---------+----------------------------------------------------------------+---------+         |
-|    |         |                                                                |         |         |
-|  X |         |   M  a  n  a  g  e  [ O ]                                      |         | X       |
-|    |         |                     (Pulse)                                    |         |         |
+|    |         |  === \_                                                        |         |         |
+|  X |         |  ===   \_ [Cart]    M a n a g e  ( O )  [ POS ]                |         | X       |
+|    |         |  ===   o   o                    (Gradient)                     |         |         |
 |    +---------+----------------------------------------------------------------+---------+         |
 |    |<-- X -->|                                                                |<-- X -->|         |
 |                                                                                                   |

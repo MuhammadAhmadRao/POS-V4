@@ -13,11 +13,8 @@ export const Navbar: React.FC = () => {
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Brand Logo */}
         <Link to="/" className="flex items-center gap-2 group shrink-0">
-          <div className="flex items-center gap-2 sm:hidden">
-            <ManageOLogo variant="symbol" size={28} />
-            <span className="font-extrabold text-base tracking-tight text-neutral-900">ManageO</span>
-          </div>
-          <ManageOLogo variant="primary" size={32} className="hidden sm:inline-flex" />
+          <ManageOLogo variant="primary" size={26} showBadge={false} className="sm:hidden" />
+          <ManageOLogo variant="primary" size={32} showBadge={true} className="hidden sm:inline-flex" />
         </Link>
 
         {/* Desktop Navigation Links */}

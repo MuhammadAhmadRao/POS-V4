@@ -40,7 +40,7 @@ export const HeroSection: React.FC = () => {
 
           <div className="md:col-span-5 md:pb-2">
             <p className="text-lg sm:text-xl text-neutral-600 leading-relaxed max-w-lg">
-              Everything your business needs to run, manage and grow — unified across retail counters, salon chairs, and dining tables in one connected operating system.
+              Everything your business needs to run, manage and grow — from fast-checkout counters and barcode printing to multi-branch stock audits, purchase ledgers, and real-time net profit analytics in one connected operating system.
             </p>
             <div className="mt-6 flex flex-wrap items-center gap-3">
               <Link to="/signup">
