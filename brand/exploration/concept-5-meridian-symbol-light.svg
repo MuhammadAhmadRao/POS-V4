@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="100%" height="100%" fill="none">
+            
+    <g transform="translate(2.5599999999999987, 2.5599999999999987) scale(0.92)">
+        <!-- Upper Arc: Storefront Horizon -->
+        <path d="M 10 30 A 22 22 0 0 1 54 30 L 46 30 A 14 14 0 0 0 18 30 Z" fill="#2563EB"/>
+        <!-- Lower Base: Back-Office Foundation -->
+        <path d="M 10 34 A 22 22 0 0 0 54 34 L 46 34 A 14 14 0 0 1 18 34 Z" fill="#0A0D14"/>
+        <!-- Dynamic Center Meridian Gap with Pulse Node -->
+        <circle cx="32" cy="32" r="3" fill="#2563EB"/>
+    </g>
+    
+        </svg>
