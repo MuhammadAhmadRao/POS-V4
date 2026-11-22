@@ -1,4 +1,5 @@
 import React from 'react';
+import { asset } from '../../utils/assets';
 
 export interface ReceiptCardProps {
   className?: string;
@@ -17,7 +18,7 @@ export const ReceiptCard: React.FC<ReceiptCardProps> = ({
       } ${className}`}
     >
       <img
-        src="/illustrations/receipt-template.svg"
+        src={asset('illustrations/receipt-template.svg')}
         alt="Tactile Perforated Thermal Receipt"
         className="w-full max-w-[280px] h-auto pointer-events-none"
         loading="lazy"

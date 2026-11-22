@@ -3,6 +3,7 @@ import { KickerBadge } from '../ui/Badge';
 import { Button } from '../ui/Button';
 import { Smartphone, Tablet, Wifi, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { asset } from '../../utils/assets';
 
 interface HardwareItem {
   id: string;
@@ -21,7 +22,7 @@ const HARDWARE_LINE: HardwareItem[] = [
     tagline: 'Dual-screen point of sale with customer payment display.',
     desc: 'An integrated countertop terminal featuring an ultra-crisp merchant touchscreen and an interactive customer-facing display showing itemized charges, tips, and digital receipt capture.',
     specs: ['15.6" Full HD Merchant Screen', '8" Customer Display with NFC', 'Built-in High-Speed Thermal Printer', 'Ethernet, Wi-Fi & 4G Failover'],
-    img: '/illustrations/terminal-countertop.svg',
+    img: asset('illustrations/terminal-countertop.svg'),
     badge: 'FLAGSHIP COUNTER',
   },
   {
@@ -30,7 +31,7 @@ const HARDWARE_LINE: HardwareItem[] = [
     tagline: 'Pocket wireless terminal for curbside and floor sales.',
     desc: 'Take payments directly at retail clothing racks, salon chairs, or restaurant tables. All-day battery life, integrated receipt printer, and contactless chip reader in one rugged pocket unit.',
     specs: ['5.5" Gorilla Glass Touchscreen', 'Integrated 58mm Thermal Printer', 'All-Day 5,000mAh Battery', 'Offline Transaction Storage'],
-    img: '/illustrations/terminal-handheld.svg',
+    img: asset('illustrations/terminal-handheld.svg'),
     badge: 'HANDHELD MOBILITY',
   },
 ];

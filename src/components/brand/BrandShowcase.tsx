@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { ManageOLogo } from './ManageOLogo';
+import { asset } from '../../utils/assets';
 import { 
   Sparkles, Check, Layers, Eye, Smartphone, Monitor, 
   Receipt, Barcode, Scissors, Utensils, Store
@@ -23,40 +24,40 @@ const CONCEPTS: LogoConcept[] = [
     name: 'Concept 01: The Orbit Nexus',
     tagline: 'Multi-Store Ecosystem in Perpetual Balance',
     philosophy: 'Concentric orbital arcs rotating around a central hub node. Symbolizes the continuous harmony of storefront transactions, warehouse stock, and multi-branch management.',
-    symbolLight: '/brand/exploration/concept-1-orbit-symbol-light.svg',
-    symbolDark: '/brand/exploration/concept-1-orbit-symbol-dark.svg',
-    wordmarkLight: '/brand/exploration/concept-1-orbit-wordmark-light.svg',
-    wordmarkDark: '/brand/exploration/concept-1-orbit-wordmark-dark.svg',
+    symbolLight: asset('brand/exploration/concept-1-orbit-symbol-light.svg'),
+    symbolDark: asset('brand/exploration/concept-1-orbit-symbol-dark.svg'),
+    wordmarkLight: asset('brand/exploration/concept-1-orbit-wordmark-light.svg'),
+    wordmarkDark: asset('brand/exploration/concept-1-orbit-wordmark-dark.svg'),
   },
   {
     id: 'concept-2-loop',
     name: 'Concept 02: The Continuous Loop',
     tagline: 'Frictionless Commerce Flow',
     philosophy: 'A single, continuous ribbon with an isometric loop. Represents the closed operational cycle: inventory in, sales processed, cash reconciled, customer retained.',
-    symbolLight: '/brand/exploration/concept-2-loop-symbol-light.svg',
-    symbolDark: '/brand/exploration/concept-2-loop-symbol-dark.svg',
-    wordmarkLight: '/brand/exploration/concept-2-loop-wordmark-light.svg',
-    wordmarkDark: '/brand/exploration/concept-2-loop-wordmark-dark.svg',
+    symbolLight: asset('brand/exploration/concept-2-loop-symbol-light.svg'),
+    symbolDark: asset('brand/exploration/concept-2-loop-symbol-dark.svg'),
+    wordmarkLight: asset('brand/exploration/concept-2-loop-wordmark-light.svg'),
+    wordmarkDark: asset('brand/exploration/concept-2-loop-wordmark-dark.svg'),
   },
   {
     id: 'concept-3-aperture',
     name: 'Concept 03: The Trilateral Core',
     tagline: 'Three Industries. One Convergence.',
     philosophy: 'Sculpted from 3 interlocking 120-degree curved sectors representing Retail, Salon, and Restaurant converging into a central aperture. Direct physical manifestation of "One Platform. Every Business."',
-    symbolLight: '/brand/exploration/concept-3-aperture-symbol-light.svg',
-    symbolDark: '/brand/exploration/concept-3-aperture-symbol-dark.svg',
-    wordmarkLight: '/brand/exploration/concept-3-aperture-wordmark-light.svg',
-    wordmarkDark: '/brand/exploration/concept-3-aperture-wordmark-dark.svg',
+    symbolLight: asset('brand/exploration/concept-3-aperture-symbol-light.svg'),
+    symbolDark: asset('brand/exploration/concept-3-aperture-symbol-dark.svg'),
+    wordmarkLight: asset('brand/exploration/concept-3-aperture-wordmark-light.svg'),
+    wordmarkDark: asset('brand/exploration/concept-3-aperture-wordmark-dark.svg'),
   },
   {
     id: 'concept-4-pulse',
     name: 'Official Master Identity: The Speed Cart & Gradient Ring (ManageO POS)',
     tagline: 'Velocity, Commerce & Seamless Operations',
     philosophy: 'A custom-designed speed cart symbol featuring three aerodynamic motion trails and an upward-curving basket, locked up with bold geometric typography and a royal-to-cyan gradient ring "O" accompanied by an official [ POS ] pill badge. Perfectly communicates lightning-fast counter checkout and cloud synchronization.',
-    symbolLight: '/brand/manageo-symbol.svg',
-    symbolDark: '/brand/manageo-symbol.svg',
-    wordmarkLight: '/brand/manageo-logo-primary.svg',
-    wordmarkDark: '/brand/manageo-logo-dark.svg',
+    symbolLight: asset('brand/manageo-symbol.svg'),
+    symbolDark: asset('brand/manageo-symbol.svg'),
+    wordmarkLight: asset('brand/manageo-logo-primary.svg'),
+    wordmarkDark: asset('brand/manageo-logo-dark.svg'),
     isWinner: true,
   },
   {
@@ -64,20 +65,20 @@ const CONCEPTS: LogoConcept[] = [
     name: 'Concept 05: The Dual Meridian',
     tagline: 'Storefront Speed & Back-Office Rigor',
     philosophy: 'Divided by a razor-thin horizontal meridian into two complementary halves: an upper light arc (customer-facing checkout) and a lower solid base (merchant ledger control).',
-    symbolLight: '/brand/exploration/concept-5-meridian-symbol-light.svg',
-    symbolDark: '/brand/exploration/concept-5-meridian-symbol-dark.svg',
-    wordmarkLight: '/brand/exploration/concept-5-meridian-wordmark-light.svg',
-    wordmarkDark: '/brand/exploration/concept-5-meridian-wordmark-dark.svg',
+    symbolLight: asset('brand/exploration/concept-5-meridian-symbol-light.svg'),
+    symbolDark: asset('brand/exploration/concept-5-meridian-symbol-dark.svg'),
+    wordmarkLight: asset('brand/exploration/concept-5-meridian-wordmark-light.svg'),
+    wordmarkDark: asset('brand/exploration/concept-5-meridian-wordmark-dark.svg'),
   },
   {
     id: 'concept-6-monogram',
     name: 'Concept 06: The Monogram Architecture',
     tagline: 'Integrated Manage + Operations',
     philosophy: 'An interlocking monogram where an ultra-minimal "M" forms the inner architectural space of the circular "O". Confident, structural, and corporate.',
-    symbolLight: '/brand/exploration/concept-6-monogram-symbol-light.svg',
-    symbolDark: '/brand/exploration/concept-6-monogram-symbol-dark.svg',
-    wordmarkLight: '/brand/exploration/concept-6-monogram-wordmark-light.svg',
-    wordmarkDark: '/brand/exploration/concept-6-monogram-wordmark-dark.svg',
+    symbolLight: asset('brand/exploration/concept-6-monogram-symbol-light.svg'),
+    symbolDark: asset('brand/exploration/concept-6-monogram-symbol-dark.svg'),
+    wordmarkLight: asset('brand/exploration/concept-6-monogram-wordmark-light.svg'),
+    wordmarkDark: asset('brand/exploration/concept-6-monogram-wordmark-dark.svg'),
   },
 ];
 
@@ -549,7 +550,7 @@ export const BrandShowcase: React.FC = () => {
                   1. THERMAL RECEIPT (PERFORATED)
                 </span>
                 <div className="w-full max-w-[260px] transform hover:-translate-y-2 transition-transform duration-300">
-                  <img src="/illustrations/receipt-template.svg" alt="Receipt" className="w-full h-auto drop-shadow-xl" />
+                  <img src={asset('illustrations/receipt-template.svg')} alt="Receipt" className="w-full h-auto drop-shadow-xl" />
                 </div>
               </div>
 
@@ -560,7 +561,7 @@ export const BrandShowcase: React.FC = () => {
                   2. RETAIL BARCODE HANGTAG
                 </span>
                 <div className="w-full max-w-[200px] transform hover:rotate-2 transition-transform duration-300">
-                  <img src="/illustrations/barcode-hangtag.svg" alt="Hangtag" className="w-full h-auto drop-shadow-xl" />
+                  <img src={asset('illustrations/barcode-hangtag.svg')} alt="Hangtag" className="w-full h-auto drop-shadow-xl" />
                 </div>
               </div>
 
@@ -570,7 +571,7 @@ export const BrandShowcase: React.FC = () => {
                   3. SALON BOOKING CHIT
                 </span>
                 <div className="w-full max-w-[260px] transform hover:-translate-y-2 transition-transform duration-300">
-                  <img src="/illustrations/salon-appointment-chit.svg" alt="Salon Chit" className="w-full h-auto drop-shadow-xl" />
+                  <img src={asset('illustrations/salon-appointment-chit.svg')} alt="Salon Chit" className="w-full h-auto drop-shadow-xl" />
                 </div>
               </div>
 
@@ -580,7 +581,7 @@ export const BrandShowcase: React.FC = () => {
                   4. RESTAURANT KDS TICKET
                 </span>
                 <div className="w-full max-w-[260px] transform hover:-translate-y-2 transition-transform duration-300">
-                  <img src="/illustrations/restaurant-kitchen-ticket.svg" alt="KDS Ticket" className="w-full h-auto drop-shadow-xl" />
+                  <img src={asset('illustrations/restaurant-kitchen-ticket.svg')} alt="KDS Ticket" className="w-full h-auto drop-shadow-xl" />
                 </div>
               </div>
             </div>
@@ -628,7 +629,7 @@ export const BrandShowcase: React.FC = () => {
                   APPLICATION: iOS &amp; ANDROID HOME SCREEN ICON
                 </span>
                 <div className="flex items-center gap-6">
-                  <img src="/brand/app-icon.svg" alt="App Icon" className="w-20 h-20 rounded-2xl shadow-xl" />
+                  <img src={asset('brand/app-icon.svg')} alt="App Icon" className="w-20 h-20 rounded-2xl shadow-xl" />
                   <div>
                     <h4 className="font-bold text-neutral-900 text-lg">ManageO POS</h4>
                     <p className="text-xs text-neutral-500 mt-1">Multi-Industry Commerce OS</p>

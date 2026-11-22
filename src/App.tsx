@@ -6,7 +6,7 @@ import { BrandShowcase } from './components/brand/BrandShowcase';
 
 export function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <Routes>
         {/* Main Marketing Landing Page */}
         <Route path="/" element={<LandingPage />} />

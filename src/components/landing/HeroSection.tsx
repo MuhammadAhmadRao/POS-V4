@@ -4,6 +4,7 @@ import { Button } from '../ui/Button';
 import { ReceiptCard } from '../ui/ReceiptCard';
 import { BarcodeTag } from '../ui/BarcodeTag';
 import { SalonChit } from '../ui/SalonChit';
+import { asset } from '../../utils/assets';
 import { ArrowRight, Sparkles, ShieldCheck, CheckCircle2 } from 'lucide-react';
 
 export const HeroSection: React.FC = () => {
@@ -76,7 +77,7 @@ export const HeroSection: React.FC = () => {
             {/* Layer 1: Left Photography - Boutique Retail Shopkeeper */}
             <div className="absolute left-4 lg:left-10 top-12 w-72 lg:w-80 h-96 rounded-3xl overflow-hidden shadow-2xl border-4 border-white transform -rotate-2 hover:rotate-0 transition-all duration-500 z-10 group">
               <img
-                src="/images/retail-hero.jpg"
+                src={asset('images/retail-hero.jpg')}
                 alt="Modern Retail Store Interior & Counter"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
               />
@@ -90,7 +91,7 @@ export const HeroSection: React.FC = () => {
             {/* Layer 2: Right Photography - Modern Salon Stylist */}
             <div className="absolute right-4 lg:right-12 top-8 w-68 lg:w-76 h-88 rounded-3xl overflow-hidden shadow-2xl border-4 border-white transform rotate-3 hover:rotate-0 transition-all duration-500 z-10 group">
               <img
-                src="/images/salon-hero.jpg"
+                src={asset('images/salon-hero.jpg')}
                 alt="Premium Hair Salon & Styling Chair"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
               />
@@ -119,7 +120,7 @@ export const HeroSection: React.FC = () => {
             {/* Layer 6: Gourmet Culinary Plate Cutout (Top Center-Right Accent) */}
             <div className="absolute right-64 top-4 w-28 h-28 lg:w-32 lg:h-32 rounded-full overflow-hidden shadow-xl border-4 border-white z-20 transform hover:scale-110 transition-transform">
               <img
-                src="/images/culinary-dish.jpg"
+                src={asset('images/culinary-dish.jpg')}
                 alt="Artisanal Food Presentation"
                 className="w-full h-full object-cover"
               />
@@ -148,7 +149,7 @@ export const HeroSection: React.FC = () => {
             <div className="grid grid-cols-2 gap-3 w-full max-w-sm z-10">
               <div className="relative rounded-2xl overflow-hidden border border-neutral-200/90 shadow-md h-32 group">
                 <img
-                  src="/images/retail-hero.jpg"
+                  src={asset('images/retail-hero.jpg')}
                   alt="Retail Store"
                   className="w-full h-full object-cover"
                 />
@@ -161,7 +162,7 @@ export const HeroSection: React.FC = () => {
 
               <div className="relative rounded-2xl overflow-hidden border border-neutral-200/90 shadow-md h-32 group">
                 <img
-                  src="/images/salon-hero.jpg"
+                  src={asset('images/salon-hero.jpg')}
                   alt="Salon Chair"
                   className="w-full h-full object-cover"
                 />

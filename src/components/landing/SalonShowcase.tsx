@@ -4,6 +4,7 @@ import { Button } from '../ui/Button';
 import { SalonChit } from '../ui/SalonChit';
 import { Calendar, Clock, Sparkles, Heart, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { asset } from '../../utils/assets';
 
 interface AppointmentSlot {
   time: string;
@@ -192,7 +193,7 @@ export const SalonShowcase: React.FC = () => {
 
             <div className="rounded-3xl overflow-hidden shadow-2xl border-4 border-white max-w-sm w-full relative group">
               <img
-                src="/images/salon-hero.jpg"
+                src={asset('images/salon-hero.jpg')}
                 alt="Salon Stylist at work"
                 className="w-full h-72 object-cover group-hover:scale-105 transition-transform duration-700"
               />

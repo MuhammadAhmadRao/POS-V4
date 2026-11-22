@@ -3,6 +3,7 @@ import { KickerBadge } from '../ui/Badge';
 import { Button } from '../ui/Button';
 import { Store, Scissors, Utensils, Check, ArrowRight, Sparkles } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { asset } from '../../utils/assets';
 
 export const CategoriesSection: React.FC = () => {
   const [activeCategory, setActiveCategory] = useState<'retail' | 'salon' | 'restaurant'>('retail');
@@ -112,7 +113,7 @@ export const CategoriesSection: React.FC = () => {
             <div className="lg:col-span-7 relative">
               <div className="rounded-3xl overflow-hidden bg-neutral-900 border border-neutral-800 shadow-2xl relative min-h-[460px] flex items-center justify-center p-8 group">
                 <img
-                  src="/images/retail-hero.jpg"
+                  src={asset('images/retail-hero.jpg')}
                   alt="Retail Storefront"
                   className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-700"
                 />
@@ -207,7 +208,7 @@ export const CategoriesSection: React.FC = () => {
             <div className="lg:col-span-7 relative">
               <div className="rounded-3xl overflow-hidden bg-neutral-900 border border-neutral-800 shadow-2xl relative min-h-[460px] flex items-center justify-center p-8 group">
                 <img
-                  src="/images/salon-hero.jpg"
+                  src={asset('images/salon-hero.jpg')}
                   alt="Modern Salon Chair"
                   className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-700"
                 />
@@ -296,7 +297,7 @@ export const CategoriesSection: React.FC = () => {
             <div className="lg:col-span-7 relative">
               <div className="rounded-3xl overflow-hidden bg-neutral-900 border border-neutral-800 shadow-2xl relative min-h-[460px] flex items-center justify-center p-8 group">
                 <img
-                  src="/images/restaurant-hero.jpg"
+                  src={asset('images/restaurant-hero.jpg')}
                   alt="Restaurant Dining Room"
                   className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-700"
                 />

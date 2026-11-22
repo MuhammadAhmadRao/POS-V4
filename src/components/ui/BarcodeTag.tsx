@@ -1,4 +1,5 @@
 import React from 'react';
+import { asset } from '../../utils/assets';
 
 export interface BarcodeTagProps {
   className?: string;
@@ -14,7 +15,7 @@ export const BarcodeTag: React.FC<BarcodeTagProps> = ({
       className={`relative select-none transition-all duration-300 hover:rotate-[2deg] hover:scale-[1.02] ${className}`}
     >
       <img
-        src="/illustrations/barcode-hangtag.svg"
+        src={asset('illustrations/barcode-hangtag.svg')}
         alt="Retail Barcode Garment Tag"
         className="w-full max-w-[200px] h-auto drop-shadow-2xl pointer-events-none"
         loading="lazy"
