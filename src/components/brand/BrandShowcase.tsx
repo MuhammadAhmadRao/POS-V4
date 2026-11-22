@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { ManageOLogo } from './ManageOLogo';
 import { 
-  Sparkles, Check, ArrowRight, Layers, Eye, Smartphone, Monitor, 
-  Receipt, Barcode, Scissors, Utensils, Store, Shield, Download, RefreshCw
+  Sparkles, Check, Layers, Eye, Smartphone, Monitor, 
+  Receipt, Barcode, Scissors, Utensils, Store
 } from 'lucide-react';
 
 interface LogoConcept {
@@ -124,7 +124,7 @@ export const BrandShowcase: React.FC = () => {
 
           <div className="hidden lg:flex items-center gap-2">
             <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-50 text-blue-700 text-xs font-bold border border-blue-100">
-              <span className="w-2 h-2 rounded-full bg-blue-600 animate-pulse"></span>
+              <Sparkles className="w-3.5 h-3.5 text-blue-600 animate-pulse" />
               PHASE 02 APPROVED
             </span>
           </div>
@@ -183,7 +183,8 @@ export const BrandShowcase: React.FC = () => {
             <div className="p-8 md:p-12 rounded-3xl bg-white border border-neutral-200 shadow-lg space-y-8">
               <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-6 border-b border-neutral-100">
                 <div>
-                  <span className="text-xs font-mono font-bold tracking-widest text-blue-600 uppercase">
+                  <span className="text-xs font-mono font-bold tracking-widest text-blue-600 uppercase flex items-center gap-1.5">
+                    <Eye className="w-3.5 h-3.5" />
                     INSPECTION BENCHMARK
                   </span>
                   <h2 className="text-2xl md:text-3xl font-black text-neutral-900 mt-1">
@@ -299,7 +300,8 @@ export const BrandShowcase: React.FC = () => {
             {/* Geometric Construction Anatomy */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               <div className="p-8 rounded-3xl bg-neutral-900 text-white space-y-6">
-                <span className="text-xs font-mono font-bold tracking-widest text-blue-400 uppercase">
+                <span className="text-xs font-mono font-bold tracking-widest text-blue-400 uppercase flex items-center gap-2">
+                  <Layers className="w-4 h-4 text-blue-400" />
                   GEOMETRIC ANATOMY &amp; GRID
                 </span>
                 <h3 className="text-2xl font-black">The Signature "O" Construction</h3>
@@ -369,7 +371,8 @@ export const BrandShowcase: React.FC = () => {
                       <span className="font-mono text-xs font-bold text-neutral-900 block">{item.file}</span>
                       <span className="text-xs text-neutral-500">{item.label}</span>
                     </div>
-                    <span className="px-2 py-1 bg-green-100 text-green-700 text-[10px] font-mono font-bold rounded">
+                    <span className="px-2 py-1 bg-green-100 text-green-700 text-[10px] font-mono font-bold rounded flex items-center gap-1">
+                      <Check className="w-3 h-3" />
                       ACTIVE
                     </span>
                   </div>
@@ -498,18 +501,24 @@ export const BrandShowcase: React.FC = () => {
               <h3 className="text-xl font-black text-neutral-900">Industry Vertical Semantic Accents</h3>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div className="p-5 rounded-2xl bg-emerald-50 border border-emerald-200">
-                  <span className="w-3 h-3 rounded-full bg-emerald-600 inline-block mr-2"></span>
-                  <span className="font-bold text-emerald-900">Retail &amp; Shop Emerald</span>
+                  <div className="flex items-center gap-2 mb-2">
+                    <Store className="w-5 h-5 text-emerald-600" />
+                    <span className="font-bold text-emerald-900">Retail &amp; Shop Emerald</span>
+                  </div>
                   <p className="text-xs font-mono text-emerald-700 mt-2">#059669 • Cash Flow &amp; Stock Balance</p>
                 </div>
                 <div className="p-5 rounded-2xl bg-rose-50 border border-rose-200">
-                  <span className="w-3 h-3 rounded-full bg-rose-600 inline-block mr-2"></span>
-                  <span className="font-bold text-rose-900">Salon &amp; Beauty Rose Dahlia</span>
+                  <div className="flex items-center gap-2 mb-2">
+                    <Scissors className="w-5 h-5 text-rose-600" />
+                    <span className="font-bold text-rose-900">Salon &amp; Beauty Rose Dahlia</span>
+                  </div>
                   <p className="text-xs font-mono text-rose-700 mt-2">#E11D48 • Aesthetics, Hair &amp; Wellness</p>
                 </div>
                 <div className="p-5 rounded-2xl bg-amber-50 border border-amber-200">
-                  <span className="w-3 h-3 rounded-full bg-amber-600 inline-block mr-2"></span>
-                  <span className="font-bold text-amber-900">Restaurant Saffron Gold</span>
+                  <div className="flex items-center gap-2 mb-2">
+                    <Utensils className="w-5 h-5 text-amber-600" />
+                    <span className="font-bold text-amber-900">Restaurant Saffron Gold</span>
+                  </div>
                   <p className="text-xs font-mono text-amber-700 mt-2">#D97706 • Culinary Speed &amp; Hospitality</p>
                 </div>
               </div>
@@ -537,7 +546,8 @@ export const BrandShowcase: React.FC = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               {/* 1. Thermal Receipt */}
               <div className="flex flex-col items-center">
-                <span className="text-xs font-mono font-bold text-neutral-500 uppercase mb-3">
+                <span className="text-xs font-mono font-bold text-neutral-500 uppercase mb-3 flex items-center gap-1.5">
+                  <Receipt className="w-3.5 h-3.5" />
                   1. THERMAL RECEIPT (PERFORATED)
                 </span>
                 <div className="w-full max-w-[260px] transform hover:-translate-y-2 transition-transform duration-300">
@@ -547,7 +557,8 @@ export const BrandShowcase: React.FC = () => {
 
               {/* 2. Barcode Hangtag */}
               <div className="flex flex-col items-center">
-                <span className="text-xs font-mono font-bold text-neutral-500 uppercase mb-3">
+                <span className="text-xs font-mono font-bold text-neutral-500 uppercase mb-3 flex items-center gap-1.5">
+                  <Barcode className="w-3.5 h-3.5" />
                   2. RETAIL BARCODE HANGTAG
                 </span>
                 <div className="w-full max-w-[200px] transform hover:rotate-2 transition-transform duration-300">
@@ -594,7 +605,8 @@ export const BrandShowcase: React.FC = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {/* Application 1: POS Touchscreen Terminal Header */}
               <div className="p-8 rounded-3xl bg-neutral-900 text-white space-y-4">
-                <span className="text-xs font-mono font-bold text-blue-400 uppercase">
+                <span className="text-xs font-mono font-bold text-blue-400 uppercase flex items-center gap-2">
+                  <Monitor className="w-4 h-4 text-blue-400" />
                   APPLICATION: CLOUD POS TERMINAL HEADER
                 </span>
                 <div className="p-4 rounded-xl bg-neutral-800 border border-neutral-700 flex items-center justify-between">
@@ -613,7 +625,8 @@ export const BrandShowcase: React.FC = () => {
 
               {/* Application 2: Mobile App Icon */}
               <div className="p-8 rounded-3xl bg-white border border-neutral-200 space-y-4">
-                <span className="text-xs font-mono font-bold text-neutral-500 uppercase">
+                <span className="text-xs font-mono font-bold text-neutral-500 uppercase flex items-center gap-2">
+                  <Smartphone className="w-4 h-4 text-neutral-500" />
                   APPLICATION: iOS &amp; ANDROID HOME SCREEN ICON
                 </span>
                 <div className="flex items-center gap-6">

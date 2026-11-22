@@ -310,3 +310,4 @@ with open(f"{OUTPUT_DIR}/app-icon.svg", "w") as f:
 </svg>""")
 
 print("Generated all 9 production brand SVG deliverables.")
+

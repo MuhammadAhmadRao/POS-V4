@@ -335,3 +335,4 @@ for fname in ["receipt-template.svg", "barcode-hangtag.svg", "salon-appointment-
         dst.write(src.read())
 
 print("Generated all commerce visual artifacts and illustrations.")
+
