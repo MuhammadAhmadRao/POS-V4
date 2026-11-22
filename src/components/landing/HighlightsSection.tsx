@@ -20,7 +20,7 @@ const HIGHLIGHTS: HighlightItem[] = [
     step: '01 / 03',
     title: 'Run your sales.',
     tagline: 'Speed up checkout at every counter and mobile terminal.',
-    description: 'Every second saved in line is customer loyalty earned. ManageO delivers an ultra-responsive touchscreen interface with barcode lookups in under 30ms, custom item modifiers, and instant split tenders across card, cash, and digital wallets.',
+    description: 'Every second saved in line is customer loyalty earned. ManageO delivers an ultra-responsive touchscreen interface with instant barcode lookups, custom item modifiers, and seamless split tenders across card, cash, and digital wallets.',
     features: [
       'Universal contactless payments (Apple Pay, Google Pay, Tap-to-Pay)',
       'Split tender by item, seat, or percentage in two taps',
@@ -278,7 +278,7 @@ export const HighlightsSection: React.FC = () => {
               {/* Bottom Subtle Status Bar */}
               <div className="pt-4 border-t border-neutral-800 flex justify-between items-center text-xs font-mono text-neutral-500 relative z-10">
                 <span>ENCRYPTED REAL-TIME WEBSOCKET</span>
-                <span className="text-neutral-400">LATENCY: 18ms</span>
+                <span className="text-neutral-400">STATUS: REAL-TIME SYNC</span>
               </div>
 
               {/* Background Ambient Glow */}

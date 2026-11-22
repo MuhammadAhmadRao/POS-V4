@@ -49,7 +49,7 @@ export const ObsidianSection: React.FC = () => {
             </div>
             <h3 className="text-xl font-bold text-white">Bank-Grade Encryption</h3>
             <p className="text-sm text-neutral-400 leading-relaxed">
-              Every card swipe, tap, and manual invoice is encrypted in transit and at rest with AES-256 and fully certified PCI-DSS Level 1 compliance.
+              Every card swipe, tap, and manual invoice is encrypted in transit and at rest with AES-256 and industry-standard encrypted data handling and hardware tokenization.
             </p>
             <div className="pt-2 font-mono text-xs text-neutral-500">
               ● END-TO-END POINT TOKENIZATION
@@ -66,10 +66,10 @@ export const ObsidianSection: React.FC = () => {
             </div>
             <h3 className="text-xl font-bold text-white">The Terminal Pulse</h3>
             <p className="text-sm text-neutral-300 leading-relaxed">
-              Our proprietary real-time event stream syncs orders between registers, floor tablets, and back-office accounting ledgers in under 40 milliseconds.
+              Our proprietary real-time event stream syncs orders between registers, floor tablets, and back-office accounting ledgers with instant low-latency event synchronization.
             </p>
             <div className="pt-2 font-mono text-xs text-blue-400 font-bold">
-              ● 40MS WEBSOCKET EVENT LATENCY
+              ● HIGH-VELOCITY WEBSOCKET EVENT SYNC
             </div>
           </div>
 

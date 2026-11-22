@@ -19,7 +19,7 @@ import { Footer } from '../components/layout/Footer';
 
 export const LandingPage: React.FC = () => {
   return (
-    <div className="min-h-screen bg-daylight-base text-obsidian-950 font-sans selection:bg-blue-600 selection:text-white">
+    <div className="min-h-screen bg-daylight-base text-obsidian-950 font-sans selection:bg-blue-600 selection:text-white overflow-x-hidden w-full">
       {/* 1. Initial Top Navigation */}
       <Navbar />
 

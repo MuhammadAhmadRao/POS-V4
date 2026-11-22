@@ -75,7 +75,7 @@ export const CategoriesSection: React.FC = () => {
                 Manage products, inventory and everyday sales.
               </h3>
               <p className="text-neutral-600 leading-relaxed">
-                Engineered for speed at checkout racks and precision in the stockroom. Scan barcodes in 30ms, manage size/color matrices, and track inventory across every store location in real time.
+                Engineered for speed at checkout racks and precision in the stockroom. Scan barcodes with instant optical recognition, manage size/color matrices, and track inventory across every store location in real time.
               </p>
 
               <div className="space-y-3 pt-2">

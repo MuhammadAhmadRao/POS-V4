@@ -1,10 +1,11 @@
 # ManageO Motion Design Library & Kinetic Specification
 
 **Document Ref:** `MANAGEO-DOC-011`  
-**Version:** 2.0 (Kinetic Specification)  
+**Version:** 3.0 (Phase 04 Final Kinetic Specification)  
 **Author:** Motion Design & Frontend Engineering Group  
 **Project:** MANAGEO Multi-Industry POS Platform  
 **Target Engine:** Framer Motion (`framer-motion`) + CSS Hardware-Accelerated Keyframes  
+**Local Preview:** [http://localhost:3000/](http://localhost:3000/)  
 
 ---
 
@@ -14,6 +15,7 @@ Motion in ManageO mirrors the physical rhythm of real-world retail and hospitali
 * **The Tap:** Instantaneous feedback (sub-100ms spring response).
 * **The Scan:** Clean, focused optical laser line.
 * **The Print:** Smooth physical extrusion of paper from the terminal slot.
+* **The Float:** Organic, subtle breathing motion for physical commerce chits.
 * **The Sync:** A subtle, reassuring pulse indicating data integrity between registers.
 
 We eliminate purposeless floating decorations and focus entirely on **tactile feedback** and **spatial orientation**.
@@ -64,7 +66,7 @@ export const MOTION_PRESETS = {
 ## 3. Core Component Motion Choreography
 
 ### 3.1. Floating Pill Navigation Dock Entrance
-* **Trigger:** Scroll position reaches `scrollY >= 120px`.
+* **Trigger:** Scroll position reaches `scrollY >= 220px`.
 * **Transform:**
   * Initial State: `y: -50px, opacity: 0, scale: 0.95`
   * Animate State: `y: 0px, opacity: 1, scale: 1.0`
@@ -72,7 +74,30 @@ export const MOTION_PRESETS = {
 * **Physics:** `MOTION_PRESETS.docking`
 * **Backdrop Blur:** `backdrop-filter: blur(16px)` initiates on mount.
 
-### 3.2. Barcode Laser Sweep Animation
+### 3.2. Gentle Artifact Floating Physics
+* **Component:** Hero centerpiece thermal receipt card and retail hangtags.
+* **CSS Keyframe:**
+  ```css
+  @keyframes gentleFloat {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-7px) rotate(0.4deg); }
+  }
+
+  @keyframes gentleFloatDelayed {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-9px) rotate(-0.5deg); }
+  }
+
+  .animate-float {
+    animation: gentleFloat 5.5s ease-in-out infinite;
+  }
+
+  .animate-float-delayed {
+    animation: gentleFloatDelayed 6.5s ease-in-out 1.2s infinite;
+  }
+  ```
+
+### 3.3. Barcode Laser Sweep Animation
 * **Component:** Product hangtags and barcode scanning simulation.
 * **CSS Keyframe:**
   ```css
@@ -87,14 +112,17 @@ export const MOTION_PRESETS = {
   }
   ```
 
-### 3.3. Transaction Pulse Node Glow
-* **Component:** Signature "O" pulse node in active POS register header.
+### 3.4. Transaction Pulse Node Glow
+* **Component:** Signature "O" pulse node in active POS register header and logo.
 * **Animation:**
   ```css
-  @keyframes pulseGlow {
-    0% { transform: scale(1); filter: drop-shadow(0 0 0 rgba(37, 99, 235, 0)); }
-    50% { transform: scale(1.12); filter: drop-shadow(0 0 8px rgba(37, 99, 235, 0.6)); }
-    100% { transform: scale(1); filter: drop-shadow(0 0 0 rgba(37, 99, 235, 0)); }
+  @keyframes ringPulse {
+    0% { transform: scale(0.95); opacity: 0.8; }
+    50% { transform: scale(1.05); opacity: 0.3; }
+    100% { transform: scale(0.95); opacity: 0.8; }
+  }
+  .animate-pulse-subtle {
+    animation: ringPulse 3s ease-in-out infinite;
   }
   ```
 
@@ -119,5 +147,4 @@ export const useAdaptiveMotion = () => {
 When `prefers-reduced-motion: reduce` is active:
 1. All positional translations (`y`, `x`, `scale`) are disabled.
 2. Motion gracefully falls back to instant opacity cross-fades (`duration: 0.15s`).
-3. Continuous looping animations (laser sweep, pulse glow) are paused.
-
+3. Continuous looping animations (laser sweep, gentle float, pulse glow) are paused.

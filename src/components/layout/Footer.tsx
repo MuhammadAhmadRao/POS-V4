@@ -15,12 +15,12 @@ export const Footer: React.FC = () => {
             <p className="text-sm text-neutral-400 max-w-sm leading-relaxed mt-3">
               One connected commerce platform engineered for the operational realities of Retail, Salon &amp; Beauty, and Restaurants.
             </p>
-            <div className="pt-2 flex items-center gap-3 text-xs font-mono text-neutral-400">
+            <div className="pt-2 flex flex-wrap items-center gap-3 text-xs font-mono text-neutral-400">
               <span className="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-neutral-900 border border-neutral-800 text-emerald-400">
                 <span className="w-1.5 h-1.5 rounded-full bg-emerald-500"></span> SYSTEMS NORMAL (99.99%)
               </span>
               <span className="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-neutral-900 border border-neutral-800 text-neutral-300">
-                <ShieldCheck className="w-3.5 h-3.5 text-blue-400" /> PCI-DSS LEVEL 1
+                <ShieldCheck className="w-3.5 h-3.5 text-blue-400" /> ENCRYPTED CHECKOUT
               </span>
             </div>
           </div>
@@ -94,13 +94,13 @@ export const Footer: React.FC = () => {
         </div>
 
         {/* Bottom Legal & Locale Bar */}
-        <div className="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-neutral-500 font-mono">
+        <div className="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-neutral-500 font-mono text-center md:text-left">
           <div className="flex items-center gap-2">
-            <Globe className="w-4 h-4 text-neutral-400" />
+            <Globe className="w-4 h-4 text-neutral-400 shrink-0" />
             <span>GLOBAL COMMERCE • UNITED STATES (USD $)</span>
           </div>
 
-          <div className="flex items-center gap-6">
+          <div className="flex flex-wrap items-center justify-center md:justify-end gap-x-6 gap-y-2">
             <a href="#privacy" className="hover:text-neutral-300 transition-colors">Privacy Notice</a>
             <a href="#terms" className="hover:text-neutral-300 transition-colors">Terms of Service</a>
             <a href="#security" className="hover:text-neutral-300 transition-colors">Security Standards</a>

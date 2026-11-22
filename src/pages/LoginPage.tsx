@@ -210,7 +210,7 @@ export const LoginPage: React.FC = () => {
 
       {/* Footer Legal */}
       <footer className="p-6 text-center text-xs font-mono text-neutral-400">
-        <span>ENCRYPTED 256-BIT CONNECTION • PCI-DSS COMPLIANT • © 2026 MANAGEO</span>
+        <span>ENCRYPTED 256-BIT CONNECTION • SECURE TOKENIZED CHECKOUT • © 2026 MANAGEO</span>
       </footer>
 
       {/* Forgot Password Modal */}

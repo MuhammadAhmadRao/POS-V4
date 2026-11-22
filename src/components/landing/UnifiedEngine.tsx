@@ -20,7 +20,7 @@ const NODES: EcosystemNode[] = [
   { id: 'inventory', title: 'Unified Inventory', category: 'MULTI-WAREHOUSE', icon: <Store className="w-5 h-5 text-emerald-600" />, metric: '3,412 Active SKUs', status: 'Auto-Sync Active', x: '75%', y: '15%' },
   { id: 'staff', title: 'Workforce & Shifts', category: 'STAFF ACCESS', icon: <Users className="w-5 h-5 text-rose-600" />, metric: '14 Team Members', status: '8 Clocked In', x: '5%', y: '65%' },
   { id: 'finance', title: 'Finance & Ledgers', category: 'CASH RECONCILIATION', icon: <DollarSign className="w-5 h-5 text-amber-600" />, metric: '$3,420 Cash Float', status: 'Balanced To-The-Penny', x: '75%', y: '65%' },
-  { id: 'security', title: 'Permissions & Roles', category: 'ACCESS MATRIX', icon: <Shield className="w-5 h-5 text-purple-600" />, metric: 'Level 1 Encrypted', status: 'Manager Overrides On', x: '25%', y: '85%' },
+  { id: 'security', title: 'Permissions & Roles', category: 'ACCESS MATRIX', icon: <Shield className="w-5 h-5 text-purple-600" />, metric: '256-Bit Encrypted', status: 'Manager Overrides On', x: '25%', y: '85%' },
   { id: 'reports', title: 'Real-Time Intelligence', category: 'ANALYTICS PULSE', icon: <BarChart3 className="w-5 h-5 text-blue-600" />, metric: '68.4% Margin', status: 'Hourly Velocity Peak', x: '60%', y: '85%' },
 ];
 

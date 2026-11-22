@@ -85,3 +85,23 @@
   animation: ringPulse 3s ease-in-out infinite;
 }
 
+/* Gentle Floating Animation for tactile commerce artifacts */
+@keyframes gentleFloat {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-7px) rotate(0.4deg); }
+}
+
+@keyframes gentleFloatDelayed {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-9px) rotate(-0.5deg); }
+}
+
+.animate-float {
+  animation: gentleFloat 5.5s ease-in-out infinite;
+}
+
+.animate-float-delayed {
+  animation: gentleFloatDelayed 6.5s ease-in-out 1.2s infinite;
+}
+
+

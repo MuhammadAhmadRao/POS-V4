@@ -9,11 +9,15 @@ export const Navbar: React.FC = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="relative z-40 bg-daylight-base/90 backdrop-blur-md border-b border-neutral-200/60 px-6 py-4 transition-all">
+    <header className="relative z-40 bg-daylight-base/90 backdrop-blur-md border-b border-neutral-200/60 px-4 sm:px-6 py-3.5 transition-all">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Brand Logo */}
-        <Link to="/" className="flex items-center gap-3 group">
-          <ManageOLogo variant="primary" size={32} />
+        <Link to="/" className="flex items-center gap-2 group shrink-0">
+          <div className="flex items-center gap-2 sm:hidden">
+            <ManageOLogo variant="symbol" size={28} />
+            <span className="font-extrabold text-base tracking-tight text-neutral-900">ManageO</span>
+          </div>
+          <ManageOLogo variant="primary" size={32} className="hidden sm:inline-flex" />
         </Link>
 
         {/* Desktop Navigation Links */}
@@ -98,15 +102,15 @@ export const Navbar: React.FC = () => {
         </div>
 
         {/* Mobile Hamburger Trigger */}
-        <div className="md:hidden flex items-center gap-2">
+        <div className="md:hidden flex items-center gap-1.5 shrink-0">
           <Link to="/signup">
-            <Button variant="primary" size="sm">
+            <Button variant="primary" size="sm" className="px-3 py-1.5 text-xs font-bold">
               Get Started
             </Button>
           </Link>
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="p-2 rounded-lg text-neutral-700 hover:bg-neutral-100"
+            className="p-1.5 rounded-lg text-neutral-700 hover:bg-neutral-100"
             aria-label="Toggle navigation menu"
           >
             {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}

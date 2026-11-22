@@ -27,7 +27,7 @@ export const RetailShowcase: React.FC = () => {
             <span className="text-emerald-700">Under control.</span>
           </h2>
           <p className="mt-4 text-lg text-neutral-600 leading-relaxed">
-            From single-door boutiques to multi-warehouse retail operations. Manage complex product variant matrices, scan barcodes with sub-30ms latency, and track store-to-store stock transfers in real time.
+            From single-door boutiques to multi-warehouse retail operations. Manage complex product variant matrices, scan barcodes with instant optical recognition, and track store-to-store stock transfers in real time.
           </p>
         </div>
 
@@ -134,7 +134,7 @@ export const RetailShowcase: React.FC = () => {
                   icon={<Scan className="w-4 h-4" />}
                   onClick={simulateScan}
                 >
-                  Simulate Barcode Scan (28ms)
+                  Simulate Instant Barcode Scan
                 </Button>
 
                 {scannedAlert && (
