@@ -9,3 +9,4 @@ export const asset = (path: string): string => {
 };
 
 export default asset;
+
